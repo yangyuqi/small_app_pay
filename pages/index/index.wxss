@@ -1,0 +1,83 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.44);
+}
+.wrap {
+  width: 600rpx;
+  height: 600rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300rpx;
+  margin-left: -300rpx;
+  background: white;
+  border-radius: 16rpx;
+}
+
+.wrap_text{
+  margin: 40rpx auto;
+  width: 160rpx;
+}
+.wrap_text_input{
+  margin: 80rpx 50rpx 0rpx 50rpx ;
+}
+.wrap_text_line{
+  margin: 15rpx 50rpx 0rpx 50rpx;
+  height: 2rpx ;
+  width: 510rpx ;
+  background: #ddd;
+}
+.wrap_text_input {
+  display: flex;
+}
+.wrap_text_input input {
+  width: 65%;
+}
+.wrap_text_input text {
+  width: 250rpx;
+  /* font-size: 26rpx; */
+  flex: 1;
+  color: #C3802A
+}
+
+.wrap_text_input_style{
+   font-size: 34rpx; 
+}
+
+.wrap_text_input_down{
+  margin: 80rpx 50rpx 0rpx 50rpx ;
+}
+
+.wrap_text_input_down button{
+  background:  rgba(204, 204, 204, 1);
+  border-radius: 20prx;
+}
+
+
+

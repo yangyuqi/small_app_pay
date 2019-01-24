@@ -1,0 +1,11 @@
+<view class="top_wrap">
+  向商家付钱
+</view>
+
+<view class="test">
+<canvas canvas-id='canvas' class='canvas'></canvas>
+</view>
+
+<view class="top_wrap">
+  <text bindtap='goSuccess'></text>
+</view>

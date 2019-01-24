@@ -1,0 +1,4 @@
+<view class='out_wrap'>
+    <icon type="success" size='26px'></icon>
+    <text>支付成功</text>
+</view>

@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+
+</view>
+
+
+<view class='box' hidden='{{ishow}}' bindtap='closeDialog'>
+      <view class='wrap' catchtap='notDialog'>
+          <view class='wrap_text'>
+          <text style=''>登录优付</text>
+          </view>
+          <view class='wrap_text_input'>
+            <input class='wrap_text_input_style' placeholder='请输入手机号码' bindinput='getPhone' maxlength='12' type='number'>{{phone}}</input>
+          </view>
+
+          <view class='wrap_text_line'></view>
+
+          <view class='wrap_text_input'>
+            <input class='wrap_text_input_style' placeholder='请输入验证码' bindinput='getMyCode' maxlength='6' type='number'>{{code}}</input>
+            <text class='wrap_text_input_style' bindtap='sendCodeNum' disabled='{{disabled}}' data-id="2">{{time}}</text>
+          </view>
+          <view class='wrap_text_line'></view>
+
+          <view class='wrap_text_input_down'>
+            <button bindtap='dologin'>登录</button>
+          </view>
+
+      </view>
+
+</view>
+

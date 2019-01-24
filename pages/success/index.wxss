@@ -1,0 +1,13 @@
+.out_wrap{
+  margin: 150rpx auto;
+  display: flex ;
+  flex-direction: column;
+  align-items: center
+}
+
+.out_wrap text{
+  margin: 30rpx 0rpx 0rpx 0rpx;
+  color: #991;
+  size: 32rpx;
+}
+
